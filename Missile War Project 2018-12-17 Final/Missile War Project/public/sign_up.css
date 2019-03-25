@@ -1,0 +1,79 @@
+﻿html {
+    font-size: 0px;
+}
+
+body {
+    background-color: #000000;
+    color: white;
+}
+
+#main {
+    font-size: 13px;
+}
+
+form, fieldset {
+    margin: 0px;
+    border: 0px;
+}
+
+fieldset {
+    margin-top: 20px;
+    width: 400px;
+}
+
+legend {
+    font-size: 0px;
+    line-height: 0px;
+}
+
+ul, li {
+    list-style: none;
+}
+
+fieldset ul li input {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    border: 2px solid #748db2;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    background-color: #000000;
+    color: white;
+    font-size: 14px;
+    font-family: Dotum;
+}
+
+fieldset .btnarea {
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 15px;
+    box-sizing: border-box;
+}
+
+    fieldset .btnarea li {
+        float:none;
+        background-color: #33486e;
+        border-radius:8px;
+        box-sizing: border-box;
+    }
+
+    fieldset .btnarea .signUpBtn {
+        text-align:center;
+        margin-left:85px;
+        margin-right:85px;
+        padding-left: 60px;
+        padding-right: 58.5px;
+    }
+
+    fieldset .btnarea li a {
+        text-decoration: none;
+        color: white;
+        font-size: 17px;
+        font-family: 'Malgun Gothic';
+    }
+
+        fieldset .btnarea li a:hover {
+            color: red;
+        }

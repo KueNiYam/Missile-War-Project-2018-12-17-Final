@@ -1,0 +1,21 @@
+MYSQL 정리
+
+#member 테이블
+CREATE TABLE member(
+	id varchar(20) NOT NULL PRIMARY KEY,
+	password varchar(20) NOT NULL,
+	authority varchar(10) default 'user' NOT NULL,
+	score int(10) unsigned NOT NULL default 0,
+	CONSTRAINT chkAuthority check(authority in('user', 'super', 'manager'))
+);
+
+#board 테이블
+CREATE TABLE board(
+	post_id int(10) unsigned NOT NULL auto_increment,
+	post_date datetime DEFAULT CURRENT_TIMESTAMP,
+	writer varchar(20) NOT NULL,
+	title varchar(20) NOT NULL,
+	content text NOT NULL,
+	primary key(post_id)
+);
+

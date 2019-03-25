@@ -1,0 +1,308 @@
+﻿@charset "utf-8";
+
+html, body {
+    height: 100%;
+    margin: 0px;
+    font-size: 0px;
+}
+
+html {
+    background: url(./image/title_kitty.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#box {
+    margin-top: 0px;
+    position: relative;
+    height: 100%;
+    margin: auto; /* 레이아웃을 싸고 있는 box의 margin을 auto로 주면 중앙정렬 효과 */
+}
+
+.txt_bar {
+    display: inline-block;
+    width: 1px;
+    height: 9px;
+    margin: 0.9px;
+    margin-top:3px;
+    background-color:white;
+}
+
+/* 스크롤바 */
+.scrollbar {
+    width: 50px;
+}
+
+/* box */
+#top {
+    width: 100%;
+    height: 20%;
+}
+
+    #top ul {
+        padding: 0px;
+        width: 100%;
+        height: 20%;
+    }
+
+        #top ul li {
+            padding-right: 10px;
+            padding-top: 20px;
+            height: 100%;
+            float: right;
+        }
+
+        #top ul #profile_right {
+            padding-right: 30px;
+        }
+
+        #top ul li a {
+            text-decoration: none;
+            list-style: none;
+            color: white;
+            font-family: Helvetica,"Malgun Gothic","Apple SD Gothic Neo", AppleGothic,Dotum,Arial,Tahoma;
+            font-size: 15px;
+            line-height: 15px;
+        }
+
+        #top ul li #profile_logout:hover {
+            color: red;
+        }
+
+        #top ul li #profile_logout {
+            font-size: 10px;
+        }
+
+.topWhenLogin {
+    visibility:hidden;
+}
+
+/* profile_card */
+
+#profile_card {
+    visibility:hidden;
+    width:200px;
+    height:100px;
+    position:absolute;
+    top:50px;
+    right:10px;
+    background-color:white;
+}
+
+    #profile_card div {
+        float:left;
+        width:80px;
+        height:80px;
+        padding:10px;
+    }
+
+#profile_rank {
+        background-color:black;
+}
+
+#profile_rank p {
+    margin: 0px;
+    color: white;
+    font-size: 15px;
+}
+/*--------------*/
+/* Left */
+#category {
+    float: left;
+    height: 75%;
+    width: 15%;
+    position: relative;
+    margin: auto;
+}
+
+    #category ul {
+        padding: 0px;
+        height: 100%;
+        width: 100%;
+    }
+
+        #category ul li {
+            font-size: 18px;
+            list-style: none;
+            color: white;
+            line-height: 50px;
+            vertical-align: middle;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+        }
+
+            #category ul li a {
+                text-decoration: none;
+                color: white;
+                display: block; /* 글씨 뿐만 아니라 전체 영역을 클릭해도 링크가 걸리게 설정*/
+                width: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                font-family: "Trebuchet MS", Dotum, Arial;
+            }
+
+                #category ul li a:hover { /* 마우스가 over되면 스타일 설정 */
+                    color: red;
+                }
+
+            #category ul li .categoryLink {
+                visibility: hidden;
+            }
+
+            #category ul li .loginLink {
+            }
+/*-----------------------------------*/
+
+/* main */
+#main {
+    float: left;
+    height: 75%;
+    width: 70%;
+    position: relative;
+}
+    #main .communityStyle {
+        background: black;
+        border-color: #5e7aab;
+        border-style: solid;
+        color: white;
+        padding: 8px;
+        font-family: Helvetica,"Malgun Gothic","Apple SD Gothic Neo", AppleGothic,Dotum,Arial,Tahoma;
+        font-size: 15px;
+        box-sizing:border-box;
+    }
+
+    #main #board {
+        float: left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 100%;
+        width: 50%;
+        margin-left:15%;
+    }
+
+    #main #postTitle {
+        height:auto;
+        float: left;
+        overflow:hidden;
+        width: 22.5%;
+    }
+
+    #main  #postTextArea {
+        float: left;
+        overflow-y: scroll;
+        overflow-x: hidden;
+        height: 50%;
+        width: 30%;
+    }
+
+    #main #postBtn {
+        padding:0px;
+        border:hidden;
+        float:left;
+        height:37.6px;
+        width:7.5%;
+        text-align:center;
+        vertical-align:middle;
+    }
+
+    #main #post {
+        text-align:center;
+        vertical-align:middle;
+        display:block;
+        width:100%;
+        height:100%;
+        font-size:10px;
+        text-decoration:none;
+        list-style:none;
+        color:white;
+    }
+
+    #main #post:hover {
+        color:red;
+    }
+      #main #post p {
+        display:inline-block;
+    }
+
+.board_title {
+    margin:0px;
+    padding:10px;
+}
+
+.board_date {
+    color:gray;
+    float:left;
+    font-size:10px;
+    margin:0px;
+    margin-right:5px;
+}
+
+.board_writer {
+    color:gray;
+    float:left;
+    font-size:10px;
+    margin:0px;
+    margin-left:5px;
+}
+
+.board_content {
+    clear:both;
+}
+
+#board_bar {
+    background-color:gray;
+    float:left;
+    width: 0.4px;
+    height: 6px;
+    margin-top:5px;
+}
+
+#board_footer {
+    height:20px;
+    width:100%;
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+#board_previous {
+    float:right;
+    margin:0px;
+    margin-right:5px;
+}
+
+#board_next {
+    float:right;
+    margin:0px;
+    margin-left:5px;
+    margin-right:10px;
+}
+
+#board_footer_bar {
+    display:block;
+    float:right;
+    margin-top:6px;
+}
+
+#board_footer p:hover {
+    color:red;
+    cursor:pointer;
+}
+
+/*-----------------------------------*/
+
+#bottom {
+    color: white;
+    height: 5%;
+    position: relative;
+    clear: both;
+    float: left;
+    width: 100%;
+    text-align: center;
+    vertical-align: middle;
+}
+
+    #bottom p {
+        font-size: 10px;
+    }
+
+/*-----------------------------------*/

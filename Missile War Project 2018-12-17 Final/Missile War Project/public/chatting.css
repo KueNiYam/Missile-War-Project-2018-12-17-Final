@@ -1,0 +1,104 @@
+﻿html {
+    background-color: black;
+    width: 340px;
+    height: 420px;
+    margin: 0px;
+}
+
+body {
+    box-sizing: border-box;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+p {
+    padding:20px;
+    padding-top:0px;
+    padding-bottom:5px;
+    margin:0px;
+    box-sizing:border-box;
+}
+
+    p:hover {
+        cursor:default;
+    }
+
+#chatting_section {
+    box-sizing:border-box;
+    height: 80%;
+    width: 97%;
+    overflow-y:auto;
+}
+
+.system {
+    color: gray;
+    width: 100%;
+    text-align: center;
+}
+
+.your_name {
+    color: red;
+    width: 100%;
+    text-align: right;
+}
+
+.your_chat {
+    color: yellow;
+    width: 100%;
+    text-align: right;
+}
+
+.my_name {
+    color: green;
+    width: 100%;
+    text-align: left;
+}
+
+.my_chat {
+    color: blue;
+    width: 100%;
+    text-align: left;
+}
+
+#input_section {
+    box-sizing: border-box;
+    width: 100%;
+    padding: 10px;
+    height: 75px;
+    bottom: 0px;
+}
+
+#input {
+    overflow-y:auto;
+    box-sizing: border-box;
+    padding: 5px;
+    margin: 0px;
+    height: 100%;
+    width: 80%;
+    background-color: white;
+    float: left;
+}
+
+#input_btn {
+    text-align: center;
+    background-color:green;
+    box-sizing: border-box;
+    padding: 5px;
+    width: 20%;
+    height: 100%;
+    color: white;
+    float: left;
+    padding-top: 17.5px;
+}
+
+    #input_btn:hover {
+        cursor:pointer;
+        color:red;
+    }
+
+#peoples {
+    clear:both;
+    color:gray;
+    padding:5px;
+}

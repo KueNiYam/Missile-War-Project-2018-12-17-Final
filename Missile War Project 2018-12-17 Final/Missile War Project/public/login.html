@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="./login.css" />
+    <script src="https://developers.kakao.com/sdk/js/kakao.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+            integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+            crossorigin="anonymous"></script>
+    <script src="./cookie/jquery-cookie/src/jquery.cookie.js"></script>
+    <script type="text/javascript" src="./login.js"charset="utf-8"></script>
+    <title>로그인</title>
+</head>
+<body>
+    <div id="main">
+        <form id="loginform">
+            <fieldset>
+                <legend>로그인 폼</legend>
+                <ul>
+                    <li class="uid">
+                        <label for="id"></label>
+                        <input id="userId" name="userId" type="text" size="15" placeholder="아이디(ID)를 입력해주세요" />
+                    </li>
+                    <li class="upw">
+                        <label for="pw"></label>
+                        <input id="userPw" name="userPw" type="password" size="15" placeholder="비밀번호(Password)를 입력해주세요" />
+                    </li>
+                </ul>
+                <ul class="btnarea">
+                    <li class="loginBtn" id="loginBtn">
+                        <a id="loginText" href="#">로그인</a>
+                    </li>
+                    <li class="signUpBtn" id="signUpBtn">
+                        <a id="signUpText" href="#">회원가입</a>
+                    </li>
+                </ul>
+                <div id="bottom">
+                    <a id="kakao-login-btn"></a>
+                    <a href="http://developers.kakao.com/logout"></a>
+                </div>
+            </fieldset>
+        </form>
+    </div>
+</body>
+</html>
